@@ -1,7 +1,7 @@
 import { Routes } from '@angular/router';
-import {HomeComponent} from './home/home.component';
+import {HomeComponent} from './components/home/home.component';
 import { loadRemoteModule } from '@angular-architects/native-federation';
-import {NotfoundComponent} from './notfound/notfound.component'
+import {NotfoundComponent} from './components/notfound/notfound.component'
 
 export const APP_ROUTES: Routes = [
     {

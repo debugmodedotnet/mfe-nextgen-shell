@@ -16,17 +16,7 @@
       "architect": {
         "build": {
           "builder": "@angular-architects/native-federation:build",
-          "options": {
-            "styles": [
-              "src/styles.scss",
-              "node_modules/bootstrap/dist/css/bootstrap.min.css",
-			  "node_modules/bootstrap-icons/font/bootstrap-icons.min.css"
-            ],
-            "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
-            ]
-          },
+          "options": {},
           "configurations": {
             "production": {
               "target": "hostapp:esbuild:production"
@@ -79,10 +69,21 @@
               {
                 "glob": "**/*",
                 "input": "public"
+              },
+              {
+                "glob": "**/*",
+                "input": "src/assets"
               }
             ],
-            "styles": ["src/styles.scss"],
-            "scripts": []
+            "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.min.css",
+              "src/styles.scss"
+            ],
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {

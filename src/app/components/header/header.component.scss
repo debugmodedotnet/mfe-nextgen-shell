@@ -1,0 +1,45 @@
+@use "../../styles/variables" as *;
+
+
+header {
+
+    .nav-item:hover {
+        background: #f5f5f5;
+    }
+
+    .dropdown-menu {
+        min-width: 830px;
+        box-shadow: #919eab4d 0 0 2px, #919eab1f 0 12px 24px -4px;
+
+        .app-links {
+            figure {
+                width: 40px;
+                height: 40px;
+            }
+
+            &:hover h5 {
+                color: $nmc-primary !important;
+            }
+        }
+
+        .faq {
+            border-top: 1px solid #ccc;
+        }
+
+        .quick-link {
+            border-left: 1px solid #ccc;
+        }
+    }
+
+    .map {
+        height: 25px;
+        width: 25px;
+        border: 1px solid $nmc-primary;
+    }
+
+    .profile {
+        height: 35px;
+        width: 35px;
+        border: 1px solid $nmc-primary;
+    }
+}

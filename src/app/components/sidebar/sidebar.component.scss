@@ -1,0 +1,49 @@
+@use "../../styles/variables" as *;
+
+.sidebar-wrapper {
+    position: fixed;
+    width: 270px;
+    height: 100vh;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    &.collapsed {
+        width: 120px;
+
+        .nav-link {
+            text-align: center;
+
+            i {
+                margin: 0 !important;
+            }
+
+            span {
+                display: none;
+            }
+        }
+    }
+
+    .nav-item {
+        font-size: 14px;
+        border-radius: 0.375rem;
+
+        &:hover {
+            background-color: #f5f5f5;
+        }
+
+        &:active {
+            background-color: $nmc-primary !important;
+        }
+
+        .nav-link:hover {
+            color: $nmc-dark-grey !important;
+        }
+    }
+
+    .nav-link.active {
+        background-color: $nmc-primary;
+    }
+}

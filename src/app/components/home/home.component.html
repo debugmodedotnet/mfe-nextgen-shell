@@ -1,0 +1,14 @@
+<app-sidebar></app-sidebar>
+
+<main
+  class="nmc-bg-white position-relative z-2"
+  [class.collapsed]="isCollapsed"
+>
+  <a
+    class="toggle-btn nmc-dark-grey position-absolute"
+    (click)="toggleSidebar()"
+    ><i class="bi bi-list font-22"></i
+  ></a>
+
+  <app-header></app-header>
+</main>
