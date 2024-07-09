@@ -1,0 +1,5 @@
+{
+	"powerbiadmin": "http://localhost:4201/remoteEntry.json",
+	"price": "http://localhost:4202/remoteEntry.json"
+
+}
