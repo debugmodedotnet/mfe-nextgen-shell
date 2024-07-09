@@ -1,0 +1,19 @@
+main {
+    margin-left: 270px;
+    height: 100vh;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    border-left: 1px solid #ccc;
+
+    .toggle-btn {
+        top: 25px;
+        left: 30px;
+        cursor: pointer;
+    }
+
+    &.collapsed {
+        margin-left: 117px;
+    }
+}
