@@ -2,7 +2,7 @@
 
 .sidebar-wrapper {
     position: fixed;
-    width: 270px;
+    width: 250px;
     height: 100vh;
     z-index: 1;
     -webkit-transition: all 0.5s ease;
@@ -11,17 +11,24 @@
     transition: all 0.5s ease;
 
     &.collapsed {
-        width: 120px;
+        width: 99px;
 
-        .nav-link {
-            text-align: center;
+        .nav-item {
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
 
-            i {
-                margin: 0 !important;
-            }
+            .nav-link {
+                text-align: center;
 
-            span {
-                display: none;
+                i {
+                    margin: 0 !important;
+                }
+
+                span {
+                    display: none;
+                }
             }
         }
     }
